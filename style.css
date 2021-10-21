@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* landing page styling*/
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+}
+
+.wrapper.display_change {
+  display: none;
+}
+
+.wrapper .child1 {
+  width: 50%;
+  height: 100vh;
+  min-height: 500px;
+}
+
+.wrapper .child1 img {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper .child2 {
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(83, 83, 241);
+}
+
+.navbar {
+  z-index: 999;
+  width: 100%;
+  height: 50px;
+  padding: 15px 0;
+  font-family: "ubuntu", sans-serif;
+  transition: all 0.3s ease;
+  background-color: none;
+}
+
+.navbar .menu {
+  float: right;
+  margin-right: 40px;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .menu li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.wrapper .child2 .desc {
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "ubuntu", sans-serif;
+  margin-top: 80px;
+  margin-left: 45px;
+}
+
+.wrapper .child2 .desc span {
+  font-size: 85px;
+  font-weight: 500;
+  color: white;
+}
+
+.wrapper .child2 .next-btn {
+  margin: 100px 0px 0px 250px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #007bff;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.wrapper .child2 .next-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.wrapper .footer {
+  margin-top: 110px;
+  background-color: none;
+  height: 32px;
+}
+
+.wrapper .footer .footer_desc {
+  margin-left: 220px;
+  padding-top: 7px;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.wrapper .footer .footer_desc span {
+  font-size: 20px;
+  font-weight: 350;
+}
+
+/*dashborad styling*/
+
+.container {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to bottom, #fcfafa 0%, #5b49bd 100%);
+  display: none;
+}
+
+.container.appear {
+  display: block;
+}
+
+.container .navbar1 {
+  z-index: 999;
+  width: 100%;
+  height: 70px;
+  padding: 15px 0;
+  font-family: "ubuntu", sans-serif;
+  background-color: rgb(211, 198, 245);
+}
+
+.container .navbar1 .title {
+  margin: 0px 0px 0px 555px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+/*button styling*/
+
+.add-btn {
+  margin-top: 5px;
+  padding-right: 10px;
+}
+
+.btn .back-btn {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 50px;
+  line-height: 20px;
+  margin-right: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn .add-btn {
+  margin: 5px;
+  float: right;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: rgb(59, 59, 241);
+  cursor: pointer;
+}
+
+.btn .back-btn:hover {
+  color: blue;
+  background: none;
+}
+
+/*table styling*/
+
+.container_table {
+  margin: 10px auto;
+  max-width: 90%;
+  width: 100%;
+  background: #fdfdfd;
+  border-radius: 8px;
+  padding-top: 15px;
+}
+
+table,
+th,
+td {
+  border: none;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: rgb(216, 211, 211);
+  font-size: 25px;
+  font-weight: 300;
+}
+
+td {
+  margin: 10px;
+  padding: 10px;
+}
+
+td button {
+  float: center;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 15px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
